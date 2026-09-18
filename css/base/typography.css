@@ -1,0 +1,35 @@
+/* =====================================================
+   TYPOGRAPHY
+   ===================================================== */
+.section-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--red-bright);
+  margin-bottom: 16px;
+}
+.section-label::before {
+  content: '';
+  width: 24px;
+  height: 2px;
+  background: var(--red-bright);
+  border-radius: 2px;
+}
+.section-title {
+  font-size: clamp(2rem,4vw,3rem);
+  font-weight: 800;
+  line-height: 1.15;
+  color: var(--white);
+}
+.section-title span { color: var(--red-bright); }
+.section-desc {
+  color: var(--text-muted);
+  font-size: 1.05rem;
+  line-height: 1.75;
+  max-width: 600px;
+  margin-top: 14px;
+}

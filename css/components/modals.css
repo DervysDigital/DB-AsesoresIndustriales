@@ -1,0 +1,41 @@
+/* =====================================================
+   MODALS
+   ===================================================== */
+.wa-modal-overlay {
+  position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(15, 27, 64, 0.8); backdrop-filter: blur(8px);
+  z-index: 9999; display: flex; align-items: center; justify-content: center;
+  opacity: 0; pointer-events: none; transition: var(--transition);
+}
+.wa-modal-overlay.is-open { opacity: 1; pointer-events: auto; }
+
+.wa-modal-content {
+  background: var(--navy-deep); border: 1px solid var(--glass-border);
+  padding: 32px; border-radius: var(--radius-md); box-shadow: var(--shadow-card);
+  width: 90%; max-width: 400px; position: relative;
+  transform: translateY(20px); transition: var(--transition);
+}
+.wa-modal-overlay.is-open .wa-modal-content { transform: translateY(0); }
+
+.wa-modal-content h3 { font-size: 1.25rem; font-weight: 800; color: var(--white); margin-bottom: 8px; }
+.wa-modal-content p { font-size: 0.9rem; color: var(--text-muted); margin-bottom: 24px; }
+
+.wa-option {
+  display: flex; align-items: center; gap: 16px;
+  padding: 16px; border-radius: var(--radius-sm);
+  background: var(--glass-bg); border: 1px solid var(--glass-border);
+  color: var(--text-primary); font-weight: 600; font-size: 1.05rem;
+  margin-bottom: 12px; transition: var(--transition);
+}
+.wa-option:last-child { margin-bottom: 0; }
+.wa-option:hover { background: var(--glass-bg2); border-color: #25D366; transform: translateY(-2px); color: var(--white); }
+.wa-option i { font-size: 1.5rem; color: #25D366; }
+
+.wa-close-btn {
+  position: absolute; top: 16px; right: 16px;
+  width: 32px; height: 32px; border-radius: 50%;
+  background: var(--glass-bg); border: 1px solid var(--glass-border);
+  display: flex; align-items: center; justify-content: center;
+  color: var(--text-muted); font-size: 1.2rem; transition: var(--transition);
+}
+.wa-close-btn:hover { background: var(--glass-bg2); color: var(--red-bright); transform: rotate(90deg); }

@@ -1,0 +1,18 @@
+/* =====================================================
+   BADGES & TAGS
+   ===================================================== */
+.cert-badge {
+  padding: 14px 10px; border-radius: var(--radius-sm);
+  background: var(--glass-bg); border: 1px solid var(--glass-border);
+  text-align: center; transition: var(--transition); cursor: default;
+}
+.cert-badge:hover { background: var(--glass-bg2); border-color: var(--red-bright); transform: translateY(-4px); box-shadow: 0 0 20px var(--red-glow); }
+.cert-badge i { font-size: 1.8rem; color: var(--red-bright); display: block; margin-bottom: 6px; }
+.cert-badge .cert-name { font-size: 0.78rem; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; color: var(--white); }
+.cert-badge .cert-desc { font-size: 0.65rem; color: var(--text-muted); line-height: 1.4; margin-top: 3px; }
+
+.course-tag {
+  margin-left: auto; font-size: 0.65rem; font-weight: 700; letter-spacing: 0.06em; 
+  color: var(--red-bright); background: rgba(217,26,42,0.1); border: 1px solid rgba(217,26,42,0.2); 
+  padding: 3px 8px; border-radius: 100px; white-space: nowrap; 
+}

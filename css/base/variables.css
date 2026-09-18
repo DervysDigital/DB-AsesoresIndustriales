@@ -1,0 +1,56 @@
+/* =====================================================
+   CSS CUSTOM PROPERTIES
+   ===================================================== */
+:root {
+  --navy-deep:     #FFFFFF;
+  --navy-mid:      #F4F7FB;
+  --navy-light:    #E2E8F0;
+  --red-accent:    #D91A2A;
+  --red-bright:    #E63946;
+  --red-glow:      rgba(217,26,42,0.15);
+  --white:         #102361;
+  --true-white:    #FFFFFF;
+  --glass-bg:      rgba(255,255,255,0.7);
+  --glass-bg2:     rgba(255,255,255,0.9);
+  --glass-border:  rgba(0,0,0,0.1);
+  --glass-border2: rgba(0,0,0,0.15);
+  --text-primary:  #0b1e5a;
+  --text-muted:    rgba(15, 21, 44, 0.75);
+  --text-faint:    rgba(0, 0, 0, 0.5);
+  --shadow-card:   0 8px 32px rgba(12, 8, 245, 0.08);
+  --radius-sm:     10px;
+  --radius-md:     18px;
+  --transition:    all 0.35s cubic-bezier(0.4,0,0.2,1);
+  
+  --grad-1:        rgba(176, 176, 194, 0.15);
+  --grad-2:        rgba(245, 3, 23, 0.08);
+  --grad-3:        rgba(15, 72, 230, 0.15);
+  --orb-opacity:   0;
+}
+
+[data-theme="dark"],
+.site-header.scrolled,
+.mobile-nav,
+.site-footer {
+  --navy-deep:     #0F1B40;
+  --navy-mid:      #1A2238;
+  --navy-light:    #243056;
+  --red-accent:    #D91A2A;
+  --red-bright:    #E63946;
+  --red-glow:      rgba(217,26,42,0.35);
+  --white:         #FFFFFF;
+  --true-white:    #FFFFFF;
+  --glass-bg:      rgba(255,255,255,0.07);
+  --glass-bg2:     rgba(255,255,255,0.12);
+  --glass-border:  rgba(255,255,255,0.14);
+  --glass-border2: rgba(255,255,255,0.22);
+  --text-primary:  #FFFFFF;
+  --text-muted:    rgba(255,255,255,0.65);
+  --text-faint:    rgba(255,255,255,0.38);
+  --shadow-card:   0 8px 32px rgba(0,0,0,0.35);
+  
+  --grad-1:        rgba(42,58,110,0.6);
+  --grad-2:        rgba(217,26,42,0.12);
+  --grad-3:        rgba(26,34,56,0.8);
+  --orb-opacity:   1;
+}

@@ -1,0 +1,35 @@
+/* Utilities for extracted inline styles */
+
+.btn-header-contact {
+  padding: 10px 22px;
+  font-size: 0.82rem;
+}
+
+.text-white {
+  color: var(--white);
+}
+
+.text-red-bright {
+  color: var(--red-bright);
+}
+
+.mt-sm {
+  margin-top: 14px;
+}
+
+.mt-xl {
+  margin-top: 56px;
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.map-iframe {
+  border: 0;
+  min-height: 400px;
+}

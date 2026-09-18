@@ -1,0 +1,33 @@
+/* =====================================================
+   RESET & BASE
+   ===================================================== */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; font-size: 16px; overflow-x: hidden; }
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background: var(--navy-deep);
+  color: var(--text-primary);
+  overflow-x: hidden;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  line-height: 1.6;
+}
+img { max-width: 100%; display: block; }
+a   { text-decoration: none; color: inherit; }
+ul, ol { list-style: none; }
+button { cursor: pointer; border: none; background: none; font-family: inherit; }
+
+/* =====================================================
+   MESH GRADIENT BACKGROUND
+   ===================================================== */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  background:
+    radial-gradient(ellipse 80% 60% at 20% 10%, var(--grad-1) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 40% at 85% 80%, var(--grad-2) 0%, transparent 55%),
+    radial-gradient(ellipse 70% 50% at 60% 50%, var(--grad-3) 0%, transparent 70%),
+    var(--navy-deep);
+}
